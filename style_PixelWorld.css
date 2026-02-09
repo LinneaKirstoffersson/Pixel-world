@@ -51,7 +51,12 @@ body {
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .logo img{
     height: 100%;
-    width: auto;          /* keeps aspect ratio */
+    width: auto;         
+    object-fit: contain;
+}
+.shop_login img{
+    height: 100%;
+    width: auto;      
     object-fit: contain;
 }
 
