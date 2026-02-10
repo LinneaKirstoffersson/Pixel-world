@@ -32,7 +32,7 @@ main{
 }
 
 /*------------------------heder nr 1------------------------------------------*/
-.firts-header {
+#firts-header {
     overflow: hidden;
     background-color:#FCEDF5;
     padding: 15px 10px;
@@ -40,7 +40,7 @@ main{
 }
 
 
-.firts-header a {
+#firts-header a {
     font:400 "Pixelify Sans";
     float: left;
     color: #6A1B9A;
@@ -61,7 +61,7 @@ main{
 }
 
 /*style for the imges*/
-.firts-header a img{
+#firts-header a img{
     float: left;
     text-align: center;
     height: 60px;
@@ -85,7 +85,7 @@ main{
 
 
 
-.firts-header a:hover {
+#firts-header a:hover {
     background-color: #fef5fa;
     transition: 0.2s ease-in;
     color: #170C1C;
