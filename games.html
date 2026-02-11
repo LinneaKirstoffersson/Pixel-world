@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pixel World </title>
     <link rel="stylesheet" href="style_PixelWorld.css">
+    <script src="pixel_script.js"> </script>
     <!--google font for main:jersy 10 headlines: pixelfy sans accsent: doto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div id="firts-header">
+        <div class="firts-header">
             <a href="Pixel_world.html" class="logo"><img src="loggo and text.png" alt="logo with the name of the site"></a>
             <div class="header-right">
                 <span>
@@ -27,22 +28,31 @@
     <div class="second-header">
         <a href="Pixel_world.html" class="logo"><img src="loggo.png" alt="logo"></a>
         <div class="header-rightSecond">
-            <a href="#firts-header">Home</a>
-            <a href="games.html" class="active">Games</a>
+            <a href="Pixel_world.html">Home</a>
+            <a href="games.html" ><span>Games</span></a>
             <input type="search" placeholder="Search">
             <img src="arrow.png" alt="arrow for search">
         </div>
     </div>
     <main>
         <section id="choseGame">
-            <div class="convinientStore">
+            <h1> Our Games</h1>
+            <div class="game1"> <!--not so convinient store-->
+                <button type="button" onclick="showGame('convinentstore')"> </button> <!-- i figured out the button but chat gpt sonected it to the script corectly-->
 
             </div>
-            <div class="unnamed">
-                <img src="unnamedShort.png" alt="game img for unnamed game"> 
+            <div class="game2"><!--Cybr grl idle adventurz-->
+                <a onclick="showGame('Cybr')"><img src="CybrShort.png" alt="game img for Cybr grl idle adventurz game"> </a> <!-- i figured out the img but chat gpt sonected it to the script corectly-->
             </div>
         </section>
+        <section id="convinentstore">
+            <h2>Not So convinient store</h2>
+        </section>
+        <section id="Cybr">
+            
+        </section>
     </main>
+
     <footer>
     
     </footer>

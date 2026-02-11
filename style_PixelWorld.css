@@ -161,6 +161,8 @@ main{
     
 }
 
+
+
 .header-rightSecond input {
     float: left;
     background-color:#6A1B9A;
@@ -185,10 +187,47 @@ input::placeholder {
     height: 2.1vw;
 }
 
-/*-------------- games.html---------------*/
+/*---------pixel_world.html----------------*/
 
-.active a{
-    color: #C81515;
+.header-right span {
+    text-decoration: underline  #C81515 ;
 }
 
+/*-------------- games.html---------------*/
+
+.header-rightSecond span {
+    text-decoration: underline  #C81515 ;
+}
+
+#choseGame {
+    overflow: hidden;
+
+    padding: 15px 10px;
+}
+
+
+.game1 {
+    width: 20vw;
+    height: 20vw;
+    background-color: #DE7FE3;
+}
+
+.game1 button {
+    width: 20vw;
+    height: 20vw;
+}
+
+.game2 {
+    width: 20vw;
+    height: 20vw;
+}
+.game2 img {
+    width: 20vw;
+    height: 20vw;
+}
+
+#convinentstore,
+#Cybr {
+    display: none;
+}
 
