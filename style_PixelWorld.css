@@ -29,10 +29,11 @@ body {
 
 main{
     min-height: 200rem;
+    background-color: #3C1254;
 }
 
 /*------------------------heder nr 1------------------------------------------*/
-#firts-header {
+.firts-header {
     overflow: hidden;
     background-color:#FCEDF5;
     padding: 15px 10px;
@@ -40,7 +41,7 @@ main{
 }
 
 
-#firts-header a {
+.firts-header a {
     font:400 "Pixelify Sans";
     float: left;
     color: #6A1B9A;
@@ -61,7 +62,7 @@ main{
 }
 
 /*style for the imges*/
-#firts-header a img{
+.firts-header a img{
     float: left;
     text-align: center;
     height: 60px;
@@ -85,7 +86,7 @@ main{
 
 
 
-#firts-header a:hover {
+.firts-header a:hover {
     background-color: #fef5fa;
     transition: 0.2s ease-in;
     color: #170C1C;
@@ -104,7 +105,7 @@ main{
     top: 0;
     z-index: 1000;          /*chat gpt added so it would sit above*/
     height: fit-content;
-    background-color:#3C1254;
+    background-color:#4a1e63;
     font:400 "Pixelify Sans";
     padding: 5px 10px;
     box-shadow: 2px 2px 5px#170c1cab;
@@ -183,3 +184,11 @@ input::placeholder {
     transition: 0.5 linear;
     height: 2.1vw;
 }
+
+/*-------------- games.html---------------*/
+
+.active a{
+    color: #C81515;
+}
+
+
