@@ -28,7 +28,8 @@ body {
 }
 
 main{
-    min-height: 200rem;
+
+    min-height: 100rem;
     background-color: #3C1254;
 }
 
@@ -184,7 +185,7 @@ input::placeholder {
 .header-rightSecond img:hover{
     cursor: pointer;
     transition: 0.5 linear;
-    height: 2.1vw;
+    transform: scale(1.1)
 }
 
 /*---------pixel_world.html----------------*/
@@ -199,51 +200,54 @@ input::placeholder {
     text-decoration: underline  #C81515 ;
 }
 
-#choseGame {
-    overflow: hidden;
-
-    padding: 15px 10px;
+#choseGame {        /* chat gpt made it a display block*/
+    display: block;  
+    text-align: center; 
+    padding: 2rem 0;
 }
 
+#choseGame h1 {
+    font-family:"Pixelify Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+    color: #fef5fa;
+    margin-bottom: 2rem;
+    
+}
 
-.game1 {
-    width: 20vw;
-    height: 20vw;
-    background-color: #DE7FE3;
+#choseGame .game1, 
+#choseGame .game2 {
+    display: inline-flex;  /*chat gpt chaged layout from float to inilne flex*/   
+    justify-content: center;
+    align-items: center;
+    width: 21.5vw;
+    height: 21.5vw;
+    border: 10px ridge #DE7FE3;
+    margin-right: 4vw;           
+    transition: transform .2s;
 }
 
 .game1 a {
-    display: grid; 
+    display: grid; /*chat gpt made it in to a grid so text could sit above img*/
     place-items: center;  
 }
-
-.game1 img {
+.game2, .game1 img {
     width: 20vw;
     height: 20vw;
 }
 .game1 img,
 .game1 a p {
-    grid-area: 1 / 1;   
+    grid-area: 1 / 1;   /*chat gpt added to get the text on top of img*/
 }
-.game1 a p {
+.game1,
+.game2 a p {
     margin-top: 10px;
     text-align: center;
     color: #FCEDF5;
     font-size: 40px;
     font-family: "Pixelify Sans", sans-serif;
-    font-weight: 400;
-}
-
-.game2 {
-    width: 20vw;
-    /*chat gpt removed the height to make te text visabel*/
-
-}
-
-.game2 img {
-    width: 100%;
-    height: auto;
-    display: block;
+    font-weight: 500;
 }
 
 
@@ -256,16 +260,47 @@ input::placeholder {
 .game2 a p {
     grid-area: 1 / 1;   /* chat gpt added so both lay in the same aria */
 }
-.game2 a p {
-    text-align: center;
-    margin-top: 10px;
-    color: #FCEDF5;
-    font-size: 40px;
-    font-family: "Pixelify Sans", sans-serif;
-    font-weight: 400;
+
+#choseGame .game1:hover,
+#choseGame .game2:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 7px #170C1C;
+    transform: scale(1.1)
+
 }
+
 #convinentstore,
 #Cybr {
     display: none;
+    margin: 0;
+    padding: 15px 10px;   
+    background-color: #3C1254; 
+
+}
+#convinentstore h2,
+#Cybr h2 {
+    margin-top: 0;   
+    margin-bottom: 1vw; 
+}
+/*----------------- Pixel_world.html ------------------------------*/
+#welcome {
+    margin: 0;
+    padding: 3vw 5vw;
+    height: 20vw;
+    color: #FCEDF5;   
+    background-image: url('cybrlongfaded.png');     /*found on w3shcool*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+
+#welcome h1  {
+    font: bold 50px "Pixelify Sans", sans-serif ;
+    
+}
+
+#welcome p{
+    font: 400 20px "Jersey 10", sans-serif;
+    margin: 0px 2vw;
+}
