@@ -212,20 +212,35 @@ input::placeholder {
     background-color: #DE7FE3;
 }
 
-.game1 button {
+.game1 img {
     width: 20vw;
     height: 20vw;
 }
+
+
 
 .game2 {
     width: 20vw;
     height: 20vw;
 }
+
 .game2 img {
     width: 20vw;
     height: 20vw;
 }
 
+
+.game2 a {
+    display: block;
+    text-align: center;
+    color: #FCEDF5;
+    text-decoration: none;
+}
+
+.game2 a p {
+    margin-top: 10px;
+    font-size: 17px;
+}
 #convinentstore,
 #Cybr {
     display: none;
