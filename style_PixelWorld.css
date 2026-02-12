@@ -212,34 +212,57 @@ input::placeholder {
     background-color: #DE7FE3;
 }
 
+.game1 a {
+    display: grid; 
+    place-items: center;  
+}
+
 .game1 img {
     width: 20vw;
     height: 20vw;
 }
-
-
+.game1 img,
+.game1 a p {
+    grid-area: 1 / 1;   
+}
+.game1 a p {
+    margin-top: 10px;
+    text-align: center;
+    color: #FCEDF5;
+    font-size: 40px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+}
 
 .game2 {
     width: 20vw;
-    height: 20vw;
+    /*chat gpt removed the height to make te text visabel*/
+
 }
 
 .game2 img {
-    width: 20vw;
-    height: 20vw;
-}
-
-
-.game2 a {
+    width: 100%;
+    height: auto;
     display: block;
-    text-align: center;
-    color: #FCEDF5;
-    text-decoration: none;
 }
 
+
+.game2 a { /*chat gpt made a spesific one for a to make the text apear on top of img*/
+    display: grid; 
+    place-items: center;   
+}
+
+.game2 img,
 .game2 a p {
+    grid-area: 1 / 1;   /* chat gpt added so both lay in the same aria */
+}
+.game2 a p {
+    text-align: center;
     margin-top: 10px;
-    font-size: 17px;
+    color: #FCEDF5;
+    font-size: 40px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
 }
 #convinentstore,
 #Cybr {
