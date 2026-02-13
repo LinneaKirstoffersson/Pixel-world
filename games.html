@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pixel World </title>
     <link rel="stylesheet" href="style_PixelWorld.css">
-    <script src="pixel_script.js"> </script>
+        <script src="pixel_script.js" defer> </script>
     <!--google font for main:jersy 10 headlines: pixelfy sans accsent: doto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="firts-header">
@@ -53,9 +54,78 @@
         </section>
         <section id="convinentstore">
             <h2>Not So convinient store</h2>
+            <img src="star_rating.png" alt="rating for the game">
+
+
+            <!-------stor silideshow--------->
+
+            <div class="slideshow-container"> <!-- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*-->
+
+                <div class="storeSlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="storegame1.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="storeSlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="storegame2.png" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="storeSlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="crying_store.png" style="width:100% ">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="storePlusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="storePlusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+
+                <div style="text-align:center">
+                <span class="storedot" onclick="storeCurrentSlide(1)"></span>
+                <span class="storedot" onclick="storeCurrentSlide(2)"></span>
+                <span class="storedot" onclick="storeCurrentSlide(3)"></span>
+            </div> 
         </section>
         <section id="Cybr">
             <h2>Cybr Grl Idle Adventurz</h2>
+            <img src="star_rating.png" alt="rating for the game">
+                <!-------cybr silideshow--------->
+            <div class="slideshow-container"> <!-- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*-->
+
+                <div class="cybrSlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="CybrShort.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="cybrSlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="loggo and text.png" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="cybrSlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="cybrlongfaded.png" style="width:100% ">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="cybrPlusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="cybrPlusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+
+                <div style="text-align:center">
+                <span class="cybrdot" onclick="cybrCurrentSlide(1)"></span>
+                <span class="cybrdot" onclick="cybrCurrentSlide(2)"></span>
+                <span class="cybrdot" onclick="cybrCurrentSlide(3)"></span>
+            </div>  
         </section>
     </main>
 

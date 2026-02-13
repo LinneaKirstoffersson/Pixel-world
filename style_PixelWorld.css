@@ -86,11 +86,11 @@ main{
 }
 
 
-
 .firts-header a:hover {
     background-color: #fef5fa;
     transition: 0.2s ease-in;
-    color: #170C1C;
+    text-decoration: underline;
+    color: #C81515;
 }
 
 
@@ -281,6 +281,97 @@ input::placeholder {
 #Cybr h2 {
     margin-top: 0;   
     margin-bottom: 1vw; 
+    color: #fef5fa;
+}
+
+/*----slide show----- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*/
+/*made minor styling changes so it fitt my prefrance*/
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin-right: auto;
+  
+}
+
+.slideshow-container img{   /*added img height and border my self*/
+    height: 350px;
+    border-radius: 20px;
+}
+
+.storeSlides,
+.cybrSlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #C81515;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.storedot,
+.cybrdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #C81515;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .storedot:hover, .cybrdot:hover {
+  background-color: #c8151575;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 /*----------------- Pixel_world.html ------------------------------*/
 #welcome {
@@ -289,9 +380,9 @@ input::placeholder {
     height: 20vw;
     color: #FCEDF5;   
     background-image: url('cybrlongfaded.png');     /*found on w3shcool*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-repeat: no-repeat;                   /*found on w3shcool*/
+    background-attachment: fixed;                   /*found on w3shcool*/
+    background-size: cover;                         /*found on w3shcool*/
 }
 
 
@@ -304,3 +395,5 @@ input::placeholder {
     font: 400 20px "Jersey 10", sans-serif;
     margin: 0px 2vw;
 }
+
+
