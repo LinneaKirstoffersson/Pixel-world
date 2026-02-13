@@ -36,7 +36,7 @@ footer{
 .copyright h2,
 .middel1 h2,
 .middel2 h2,
-.right h2,
+#right h2,
 .left h2{
     margin: 0;
     
@@ -45,7 +45,7 @@ footer{
 .copyright p,
 .middel1 p,
 .middel2 p,
-.right p,
+#right p,
 .left p{
     font-size: 15px;
 }
@@ -227,6 +227,7 @@ input::placeholder {
     background-repeat: no-repeat;                   /*found on w3shcool*/
     background-attachment: fixed;                   /*found on w3shcool*/
     background-size: cover;                         /*found on w3shcool*/
+    box-shadow: 2px 2px 5px #170C1C;
 }
 
 
@@ -240,7 +241,23 @@ input::placeholder {
     margin: 0px 2vw;
 }
 
+#Aboutus{
+    margin-left: 5vw;
+    margin-top: 15vw; 
+    padding-bottom: 15vw; 
+}
+#Aboutus h1{
+    font-size: 40px;
+    font-family: "Pixelify Sans", sans-serif;
+    color:#f2f2f2
+}
 
+#Aboutus p{
+    font-size: 20px;
+    font-family: "Jersey 10", sans-serif;
+    color: #f2f2f2;
+    margin-left: 2vw;
+}
 
 /*-------------- games.html---------------*/
 
@@ -327,18 +344,25 @@ input::placeholder {
 }
 #convinentstore h2,
 #Cybr h2 {
-    margin-top: 0;   
-    margin-bottom: 1vw; 
+    margin: 1vw 5vw 0;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Pixelify Sans", sans-serif ;
     color: #fef5fa;
 }
+.game_review img{
+    margin-left: 5vw;
+    width: 7vw;
+
+}
+
 
 /*----slide show----- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*/
 /*made minor styling changes so it fitt my prefrance*/
 .slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin-right: auto;
-  
+    max-width: 600px;
+    position: relative;
+    margin-left: 5vw;  
 }
 
 .slideshow-container img{   /*added img height and border my self*/
@@ -348,79 +372,102 @@ input::placeholder {
 
 .storeSlides,
 .cybrSlides {
-  display: none;
+    display: none;
 }
 
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #C81515;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #C81515;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 .storedot,
 .cybrdot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #C81515;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    padding-right: auto;
+    background-color: #C81515;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .storedot:hover, .cybrdot:hover {
-  background-color: #c8151575;
+    background-color: #c8151575;
 }
 
 
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
+.byBtn {
+    float: right;
+    margin-right: 34vw;
+    border-radius: 20px;
+    margin-top: -6vw;
+    width: 10vw;
+    border-style: none;
+    box-shadow: 1px 1px 3px #170C1C;
+    background-color: #C81515;
+    color: #f2f2f2;
+}
 
+.byBtn:hover {
+    box-shadow: 2px 2px 5px #170C1C;
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
 
+.description p{
+    margin-left: 5vw;
+    font-size: 20px;
+    font-weight: 300;
+    color:#f2f2f2;
+}
