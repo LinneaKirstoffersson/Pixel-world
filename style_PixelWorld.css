@@ -11,26 +11,49 @@
     font-style: normal;
 }
 
-.doto-accent {
-    font-family: "Doto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "ROND" 0;
-}
 
 * {box-sizing: border-box;}
 
 body { 
     margin: 0;
-    font-family: "Jersey 10", "Pixelify Sans","Doto", sans-serif;
+    font-family: "Jersey 10", "Pixelify Sans", sans-serif;
 }
 
 main{
 
-    min-height: 100rem;
+    min-height: 40rem;
     background-color: #3C1254;
+}
+footer{
+    background-color:#170C1C;
+    color: #C81515;
+    margin: 0;
+    padding: 3vw 9vw;
+    font-family: "Jersey 10", sans-serif;
+    display: flex;  
+    gap: 9vw;
+}
+.copyright h2,
+.middel1 h2,
+.middel2 h2,
+.right h2,
+.left h2{
+    margin: 0;
+    
+    font-size: 30px ;
+}
+.copyright p,
+.middel1 p,
+.middel2 p,
+.right p,
+.left p{
+    font-size: 15px;
+}
+
+footer p:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+    transition: 0.1s ease-in;
 }
 
 /*------------------------heder nr 1------------------------------------------*/
@@ -188,11 +211,36 @@ input::placeholder {
     transform: scale(1.1)
 }
 
-/*---------pixel_world.html----------------*/
+/*----------------- Pixel_world.html ------------------------------*/
 
 .header-right span {
     text-decoration: underline  #C81515 ;
 }
+
+
+#welcome {
+    margin: 0;
+    padding: 3vw 5vw;
+    height: 20vw;
+    color: #FCEDF5;   
+    background-image: url('cybrlongfaded.png');     /*found on w3shcool*/
+    background-repeat: no-repeat;                   /*found on w3shcool*/
+    background-attachment: fixed;                   /*found on w3shcool*/
+    background-size: cover;                         /*found on w3shcool*/
+}
+
+
+#welcome h1  {
+    font: bold 50px "Pixelify Sans", sans-serif ;
+    
+}
+
+#welcome p{
+    font: 400 20px "Jersey 10", sans-serif;
+    margin: 0px 2vw;
+}
+
+
 
 /*-------------- games.html---------------*/
 
@@ -373,27 +421,6 @@ input::placeholder {
   from {opacity: .4}
   to {opacity: 1}
 }
-/*----------------- Pixel_world.html ------------------------------*/
-#welcome {
-    margin: 0;
-    padding: 3vw 5vw;
-    height: 20vw;
-    color: #FCEDF5;   
-    background-image: url('cybrlongfaded.png');     /*found on w3shcool*/
-    background-repeat: no-repeat;                   /*found on w3shcool*/
-    background-attachment: fixed;                   /*found on w3shcool*/
-    background-size: cover;                         /*found on w3shcool*/
-}
 
-
-#welcome h1  {
-    font: bold 50px "Pixelify Sans", sans-serif ;
-    
-}
-
-#welcome p{
-    font: 400 20px "Jersey 10", sans-serif;
-    margin: 0px 2vw;
-}
 
 
