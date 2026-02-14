@@ -11,20 +11,20 @@
     font-style: normal;
 }
 
-
+/* general sizing*/
 * {box-sizing: border-box;}
 
-body { 
+body {  /*general margin and fonts*/
     margin: 0;
     font-family: "Jersey 10", "Pixelify Sans", sans-serif;
 }
 
-main{
+main{   /*general website height and background color*/
 
     min-height: 40rem;
     background-color: #3C1254;
 }
-footer{
+footer{     /*general style for the fotter*/
     background-color:#170C1C;
     color: #C81515;
     margin: 0;
@@ -33,6 +33,8 @@ footer{
     display: flex;  
     gap: 9vw;
 }
+
+/*font size and spacing for all the footer headlines*/
 .copyright h2,
 .middel1 h2,
 .middel2 h2,
@@ -42,6 +44,7 @@ footer{
     
     font-size: 30px ;
 }
+/*font size and spacing for all the footer underlines  */
 .copyright p,
 .middel1 p,
 .middel2 p,
@@ -50,14 +53,14 @@ footer{
     font-size: 15px;
 }
 
-footer p:hover{
+footer p:hover{     /*hover for the footers underlines*/
     cursor: pointer;
     transform: scale(1.1) ;
     transition: 0.1s ease-in;
 }
 
 /*------------------------heder nr 1------------------------------------------*/
-.firts-header {
+.firts-header {     /*general styling for the fist header*/
     overflow: hidden;
     background-color:#FCEDF5;
     padding: 15px 10px;
@@ -65,7 +68,7 @@ footer p:hover{
 }
 
 
-.firts-header a {
+.firts-header a {   /*styling and spacing for first headers a */
     font:400 "Pixelify Sans";
     float: left;
     color: #6A1B9A;
@@ -77,7 +80,7 @@ footer p:hover{
     border-radius: 4px;
 }
 
-.header-right span {
+.header-right span {    /*span to seperrate the text from the imgs*/
     display: block;
     float: left;
     margin-right: 40vw;
@@ -109,7 +112,7 @@ footer p:hover{
 }
 
 
-.firts-header a:hover {
+.firts-header a:hover { /*hover for a img and text links*/
     background-color: #fef5fa;
     transition: 0.2s ease-in;
     text-decoration: underline;
@@ -124,7 +127,7 @@ footer p:hover{
 
 
 /*-------------------header nr2-----------------------------------------*/
-.second-header {
+.second-header {    /*style and postion + sticky for secon header*/
     position: sticky;
     top: 0;
     z-index: 1000;          /*chat gpt added so it would sit above*/
@@ -137,7 +140,7 @@ footer p:hover{
 }
 
 
-.second-header a {
+.second-header a {  /* second header general syle for a text links*/
     float: left;
     color: #FFFBFD;
     text-align: center;
@@ -177,7 +180,7 @@ footer p:hover{
 }
 
 
-.header-rightSecond {
+.header-rightSecond {   /*position for the links and search*/
     float: right;
     padding-top: 1vw;
     margin-right: 30vw;
@@ -187,7 +190,7 @@ footer p:hover{
 
 
 
-.header-rightSecond input {
+.header-rightSecond input {     /*placement and style for the search*/
     float: left;
     background-color:#6A1B9A;
     border-width: 5px;
@@ -195,17 +198,17 @@ footer p:hover{
    
 
 }
-input::placeholder {
+input::placeholder {        /*the word in serch styling*/
     font-family: "Jersey 10" ;
     font-size: 20px;
     color: #C81515;
     
 }
-.header-rightSecond img{
+.header-rightSecond img{    /* height for the arrow img*/
     height: 2vw;
 
 }
-.header-rightSecond img:hover{
+.header-rightSecond img:hover{ /*hover efect for the arrow img*/
     cursor: pointer;
     transition: 0.5 linear;
     transform: scale(1.1)
@@ -213,12 +216,12 @@ input::placeholder {
 
 /*----------------- Pixel_world.html ------------------------------*/
 
-.header-right span {
+.header-right span {    /*span for the underline color for the aktive page*/
     text-decoration: underline  #C81515 ;
 }
 
 
-#welcome {
+#welcome {      /*general style and baground img for intruduction for pixel world*/
     margin: 0;
     padding: 3vw 5vw;
     height: 20vw;
@@ -231,28 +234,28 @@ input::placeholder {
 }
 
 
-#welcome h1  {
+#welcome h1  {  /*intruduction page font style headline*/
     font: bold 50px "Pixelify Sans", sans-serif ;
     
 }
 
-#welcome p{
+#welcome p{     /*intruduction page font style breadtext*/
     font: 400 20px "Jersey 10", sans-serif;
     margin: 0px 2vw;
 }
 
-#Aboutus{
+#Aboutus{       /*about us info spacing on website*/
     margin-left: 5vw;
     margin-top: 15vw; 
     padding-bottom: 15vw; 
 }
-#Aboutus h1{
+#Aboutus h1{       /*style and color for about us info headline */
     font-size: 40px;
     font-family: "Pixelify Sans", sans-serif;
     color:#f2f2f2
 }
 
-#Aboutus p{
+#Aboutus p{     /*style and color for about us info bread text*/
     font-size: 20px;
     font-family: "Jersey 10", sans-serif;
     color: #f2f2f2;
@@ -261,7 +264,7 @@ input::placeholder {
 
 /*-------------- games.html---------------*/
 
-.header-rightSecond span {
+.header-rightSecond span {      /*span for the underline color for the aktive page*/
     text-decoration: underline  #C81515 ;
 }
 
@@ -271,7 +274,7 @@ input::placeholder {
     padding: 2rem 0;
 }
 
-#choseGame h1 {
+#choseGame h1 { /*headline style*/
     font-family:"Pixelify Sans", sans-serif;
     font-size: 60px;
     font-weight: 200;
@@ -282,7 +285,7 @@ input::placeholder {
 }
 
 #choseGame .game1, 
-#choseGame .game2 {
+#choseGame .game2 {     /*general style and spacing for the container*/
     display: inline-flex;  /*chat gpt chaged layout from float to inilne flex*/   
     justify-content: center;
     align-items: center;
@@ -293,20 +296,20 @@ input::placeholder {
     transition: transform .2s;
 }
 
-.game1 a {
+.game1 a {      /*placment for the onclick */
     display: grid; /*chat gpt made it in to a grid so text could sit above img*/
     place-items: center;  
 }
-.game2, .game1 img {
+.game2, .game1 img {    /*imges size slighly smaller to ensure right with border */
     width: 20vw;
     height: 20vw;
 }
 .game1 img,
-.game1 a p {
+.game1 a p {    /*grid placement for all parts for game1*/
     grid-area: 1 / 1;   /*chat gpt added to get the text on top of img*/
 }
 .game1,
-.game2 a p {
+.game2 a p {    /*general style for both games texts*/
     margin-top: 10px;
     text-align: center;
     color: #FCEDF5;
@@ -322,12 +325,12 @@ input::placeholder {
 }
 
 .game2 img,
-.game2 a p {
+.game2 a p {    /*grid placement for all parts for game1*/
     grid-area: 1 / 1;   /* chat gpt added so both lay in the same aria */
 }
 
 #choseGame .game1:hover,
-#choseGame .game2:hover {
+#choseGame .game2:hover {   /*hover style to make them look clicabel for both games*/
     cursor: pointer;
     box-shadow: 5px 5px 7px #170C1C;
     transform: scale(1.1)
@@ -335,7 +338,7 @@ input::placeholder {
 }
 
 #convinentstore,
-#Cybr {
+#Cybr {             /*general style for both games and display none for them to not show befoere clicked*/
     display: none;
     margin: 0;
     padding: 15px 10px;   
@@ -343,14 +346,14 @@ input::placeholder {
 
 }
 #convinentstore h2,
-#Cybr h2 {
+#Cybr h2 {          /*headline style and placement for the game name over the img display*/
     margin: 1vw 5vw 0;
     font-size: 50px;
     font-weight: 300;
     font-family: "Pixelify Sans", sans-serif ;
     color: #fef5fa;
 }
-.game_review img{
+.game_review img{       /*star rating place and size*/
     margin-left: 5vw;
     width: 7vw;
 
@@ -359,7 +362,7 @@ input::placeholder {
 
 /*----slide show----- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*/
 /*made minor styling changes so it fitt my prefrance*/
-.slideshow-container {
+.slideshow-container {      /*size and positon for all the things exept dots */
     max-width: 600px;
     position: relative;
     margin-left: 5vw;  
@@ -371,11 +374,11 @@ input::placeholder {
 }
 
 .storeSlides,
-.cybrSlides {
+.cybrSlides {   /*no display untill js put out img*/
     display: none;
 }
 
-.prev, .next {
+.prev, .next {      /*style and placement for the arrows to change the img*/
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -391,17 +394,17 @@ input::placeholder {
 }
 
 
-.next {
+.next {     
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 
-.prev:hover, .next:hover {
+.prev:hover, .next:hover {      /*hover for the buttons*/
     background-color: rgba(0,0,0,0.8);
 }
 
-.text {
+.text {     /*img decription text style and placing*/
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -411,7 +414,7 @@ input::placeholder {
     text-align: center;
 }
 
-.numbertext {
+.numbertext {       /*img number text style and placing*/
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -420,7 +423,7 @@ input::placeholder {
 }
 
 .storedot,
-.cybrdot {
+.cybrdot {      /*the dots style*/
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -432,12 +435,12 @@ input::placeholder {
     transition: background-color 0.6s ease;
 }
 
-.active, .storedot:hover, .cybrdot:hover {
+.active, .storedot:hover, .cybrdot:hover {      /*hover color for all the dots*/
     background-color: #c8151575;
 }
 
 
-.fade {
+.fade {     /*fade animation*/
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -447,7 +450,7 @@ input::placeholder {
     to {opacity: 1}
 }
 
-.byBtn {
+.byBtn {        /*buy button placement and style*/
     float: right;
     margin-right: 34vw;
     border-radius: 20px;
@@ -459,13 +462,13 @@ input::placeholder {
     color: #f2f2f2;
 }
 
-.byBtn:hover {
+.byBtn:hover {      /*hover size and shadow for buy button*/
     box-shadow: 2px 2px 5px #170C1C;
     transform: scale(1.1);
     transition: 0.1s ease-in;
 }
 
-.description p{
+.description p{     /*basic style for the desctiption part bread text*/
     margin-left: 5vw;
     font-size: 20px;
     font-weight: 300;

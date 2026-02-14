@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pixel World </title>
     <link rel="stylesheet" href="style_PixelWorld.css">
-        <script src="pixel_script.js" defer> </script>
+    <script src="pixel_script.js" defer> </script>
     <!--google font for main:jersy 10 headlines: pixelfy sans accsent: doto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,134 +14,133 @@
 
 <body>
     <header>
-        <div class="firts-header">
+        <div class="firts-header"> <!-- header that contains  the main logo and the bsic links -->
             <a href="Pixel_world.html" class="logo"><img src="loggo and text.png" alt="logo with the name of the site"></a>
-            <div class="header-right">
-                <span>
+            <div class="header-right"><!--insded first header to seperate the diffrent links-->
+                <span>           <!-- text links that link to difrent farts of the main page-->
                     <a href="#about us">About us</a>
                     <a href="#contact">Contact</a> 
                 </span>
+                    <!--img that links to noting-->
                 <a href="#login" class="shop_login"> <img src="login.png"></a>
                 <a href="#shopcart" class="shop_login"><img src="shopingcart.png"></a>
             </div>
         </div>
     </header>
-    <div class="second-header">
+    <div class="second-header">     <!-- header that sticks through out the page an contains links and search-->
         <a href="Pixel_world.html" class="logo"><img src="loggo.png" alt="logo"></a>
         <div class="header-rightSecond">
-            <a href="Pixel_world.html">Home</a>
-            <a href="games.html" ><span>Games</span></a>
+            <a href="Pixel_world.html">Home</a>        <!-- goes to home page-->
+            <a href="games.html" ><span>Games</span></a>    <!-- span for the active page-->
             <input type="search" placeholder="Search">
             <img src="arrow.png" alt="arrow for search">
         </div>
     </div>
     <main>
-        <section id="choseGame">
+        <section id="choseGame">    <!--section for the games where you can see each game and decide what game to open-->
             <h1> Our Games </h1>
-            <div class="game1"> <!--not so convinient store-->
-                <a onclick="showGame('convinentstore')">
+            <div class="game1"> <!--container for the img/button for not so convinient store-->
+                <a onclick="showGame('convinentstore')"> <!-- coclick that links to js so the part for not so convineient store shows-->
                     <img src="storegame2.png" alt="game img for not so convinent store game">
                     <p> Not So Convinent Store</p>
-                </a> <!-- i figured out the img but chat gpt sonected it to the script corectly-->
+                </a> <!-- i figured out the img and onclick but chat gpt sonected it to the script corectly-->
 
             </div>
-            <div class="game2"><!--Cybr grl idle adventurz-->
-                <a onclick="showGame('Cybr')">
+            <div class="game2"><!--container for the img/button for Cybr grl idle adventurz-->
+                <a onclick="showGame('Cybr')">  <!--onclick for cybr grl idle adventurz game that links to js-->
                     <img src="CybrShort.png" alt="game img for Cybr grl idle adventurz game">
                     <p>Cybr Grl Idle Adventurz</p>
-                </a> <!-- i figured out the img but chat gpt sonected it to the script corectly-->
+                </a> <!-- i figured out the img  and onclick but chat gpt sonected it to the script corectly-->
             </div>
         </section>
-        <section id="convinentstore">
-            <div class="game_review">
+        <section id="convinentstore">   <!--section for not so convinient store game after js link/img was pressed-->
+            <div class="game_review">   <!-- Game name and star rating-->
                 <h2>Not So convinient store</h2>
                 <img src="star_rating.png" alt="rating for the game">
         </div>
 
-            <!-------stor silideshow--------->
-
+            <!-------store silideshow--------->
+            <!--link to w3school slide show: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
             <div class="slideshow-container"> <!-- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*-->
-
-                <div class="storeSlides">
+                
+                <div class="storeSlides">   <!-- class for each number, img and short description -->
                     <div class="numbertext">1 / 3</div>
                     <img src="storegame3.png" style="width:100%">
                     <div class="text">restocking shelfs</div>
                 </div>
 
-                <div class="storeSlides">
+                <div class="storeSlides">    <!-- class for each number, img and short description -->
                     <div class="numbertext">2 / 3</div>
                     <img src="storegame2.png" style="width:100%">
                     <div class="text">Getting scolded</div>
                 </div>
 
-                <div class="storeSlides">
+                <div class="storeSlides">  <!-- class for each number, img and short description -->
                     <div class="numbertext">3 / 3</div>
                     <img src="crying_store.png" style="width:100% ">
                     <div class="text">crying in a corner</div>
                 </div>
-
+                    <!-- slide changes forward and backwards conected trough js-->
                 <a class="prev" onclick="storePlusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="storePlusSlides(1)">&#10095;</a>
                 </div>
                 <br>
 
 
-                <div style="margin-left: 26vw;">
+                <div style="margin-left: 26vw;">    <!--the three dotts under img that you can change the img with-->
                 <span class="storedot" onclick="storeCurrentSlide(1)"></span>
                 <span class="storedot" onclick="storeCurrentSlide(2)"></span>
                 <span class="storedot" onclick="storeCurrentSlide(3)"></span>
             </div>
             
-            <button class="byBtn">
-                <p>by for: 160kr</p>
+            <button class="byBtn">      <!--button so you can get the game and know the price-->
+                <p>buy for: 160kr</p>
             </button>
-            <div class="description">
+            <div class="description">   <!--description of the game by the developers-->
                 <p>You are broke and sad so a job is needed, you apply for a convenient store that's hiring.<br>
                      All you need to do is stock all the shelfs before your shift is over, good luck.
                 </p>
             </div>
         </section>
         <section id="Cybr">
-            <div class="game_review">
+            <div class="game_review">   <!-- Game name and star rating-->
                 <h2>Cybr Grl Idle Adventurz</h2>
                 <img src="star_rating.png" alt="rating for the game">
             </div>
                 <!-------cybr silideshow--------->
             <div class="slideshow-container"> <!-- disclamer i did not program the slide show i found and copypasted from w3school i have read trough it and understand most of it*-->
 
-                <div class="cybrSlides">
+                <div class="cybrSlides">     <!-- class for img and short description -->
                     <img src="cybrgame2.png" style="width:100%">
                     <div class="text">cybr world</div>
                 </div>
 
-                <div class="cybrSlides">
-               
+                <div class="cybrSlides">    <!-- class for img and short description -->
                     <img src="cybrgame1.png" style="width:100%">
                     <div class="text">shoping menu</div>
                 </div>
 
-                <div class="cybrSlides">
-            
+                <div class="cybrSlides">    <!-- class for img and short description -->
                     <img src="cybrgame3.png" style="width:100% ">
                     <div class="text">cybr fight</div>
                 </div>
-
+                <!-- slide changes forward and backwards conected trough js-->
                 <a class="prev" onclick="cybrPlusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="cybrPlusSlides(1)">&#10095;</a>
                 </div>
                 <br>
 
-
+                <!--the three dotts under img that you can change the img with-->
                 <div style="margin-left: 26vw;">
                 <span class="cybrdot" onclick="cybrCurrentSlide(1)"></span>
                 <span class="cybrdot" onclick="cybrCurrentSlide(2)"></span>
                 <span class="cybrdot" onclick="cybrCurrentSlide(3)"></span>
             </div> 
             
-            <button class="byBtn">
-                <p>by for: free</p>
+            <button class="byBtn">  <!--button so you can get the game and know the price-->
+                <p>buy for: free</p>
             </button>
-            <div class="description">
+            <div class="description">    <!--description of the game by the developers-->
                 <p>Cyber girl idle adventure - ett spel som utspelar sig i den digitala världen. <br>
                     Du är ett virus som har trängt in i systemet och färdas genom kablar, där du bekämpar olika antivirusprogram <br>¨
                     samtidigt som du samlar på "emmacoins" för att köpa uppgrades på the dark web. <br>
@@ -152,7 +151,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer> <!-- basic footer-->
         <div class="left">
             <h2> games </h2>
             <p>Not So convinient store</p>
